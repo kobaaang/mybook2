@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style/reset.css">
+   <link rel="stylesheet" href="style/index.css">
+   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+   <script defer src="js/index.js" type="module"></script>
+   <title>회원가입 페이지</title>
+
+
+</head>
+
+<body>
+   <header>
+      <h1>동네북</h1>
+   </header>
+   <div class="content_wrap">
+      <!-- login_wrap start -->
+      <div class="login_wrap">
+         <form>
+            <h1>로그인</h1>
+            <div><!--E-mail :--> <input type='email' id="signInEmail" placeholder="E-mail"></div>
+            <div><!--password :--> <input type='password' id="signInPassword" placeholder="password"></div>
+            <button type="submit" id="signInButton">로그인 하기</button>
+         </form>
+      </div>
+      <div><button class="signme">**********회원가입하러 가기**********</button></div>
+      <!-- login_wrap end -->
+
+
+      <!-- sigin_warp start -->
+      <div class="sign_wrap">
+         <form>
+            <h1>간편 회원가입</h1>
+            <div><!--E-mail : --><input type='email' id="signUpEmail" placeholder="E-mail"></div>
+            <div><!--password : --><input type='password' id="signUpPassword" placeholder="password"></div>
+            <button type="submit" id="signUpButton">회원가입 하기</button>
+            <button>로그인하러 가기</button>
+         </form>
+      </div>
+      <!-- sigin_wrap end -->
+   </div>
+   <!-- content_wrap end -->
+   <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth.js"></script>
+
+   <script>
+      document.querySelector('.signme').addEventListener('click', function () {
+         document.querySelector('.sign_wrap').classList.add('on')
+      })
+   </script>
+
+
+</body>
+
+
+</html>

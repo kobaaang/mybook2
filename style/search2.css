@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@font-face {
+   font-family: 'Pretendard-Regular';
+   src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+   font-weight: 400;
+   font-style: normal;
+}
+
+body{
+   max-width:500px;
+   width:100%;
+   margin:0 auto;
+   background: #eeeeee;
+   font-family: 'Pretendard-Regular';
+}
+
+/* header */
+header{
+   width: 100%;;
+}
+
+header img{
+   height: 50px;
+}
+/* header end */
+
+/* contetn_wrap */
+.content_wrap{
+   max-width: 100%;
+}
+
+.section1{
+   margin:0 auto;
+   border:1px solid red;
+   text-align: center;
+   margin-top: 50px;
+   padding-bottom: 50px;
+}
+
+.content1{
+   text-align: center;
+}
+
+.thumbnail{
+   height: 200px;
+}
+
+.section1 img{
+   height:200px;
+   margin-top: 60px;
+}
+
+.section1_1{
+   margin-top: 50px;
+}
+
+.title{
+   font-size: 20px;
+   margin-top: 30px;
+   color:#4F2E1F;
+}
+
+.txt{
+   margin-top: 15px;
+   font-size: 16px;
+   margin-top: 20px;
+   color:black;
+}
+
+/* section2 */
+.section2{
+   margin-top: 30px;
+   max-width: 100%;
+}
+
+.section2_1{
+   width:100%;
+   margin-bottom:15px
+}
+
+.section2_1 ul{
+   width: 100%;;
+   display: flex;
+   justify-content: space-between;
+
+}
+.section2_1 ul li{
+   width: 33.33%;
+   padding:10px 0;
+   
+}
+
+.section2_1 ul li:nth-child(1){
+   border:2px solid #2A5137;
+}
+.section2_1 ul li:nth-child(2){
+   border-top:2px solid #2A5137;
+   border-bottom:2px solid #2A5137;
+}
+.section2_1 ul li:nth-child(3){
+   border:2px solid #2A5137;
+}
+
+.section2_1 ul li img{
+   height: 35px;
+   padding-left: 38%;
+
+}
+
+.section2_1 ul li p{
+   margin-top: 20px;
+   text-align: center;
+   color:black;
+   font-size: 14px;
+}
+
+.section2_2{
+   line-height: 40px;
+}
+.contents{
+   line-height: 20px;
+}
+.section2_3 h1{
+   font-size: 18px;
+   padding-bottom: 10px;
+}
+.section2_3 p{
+   font-size: 14px;
+   line-height: 25px;
+}
+/* section2 end */
+/* content_wrap end */
+
+footer{
+   max-width:500px;
+   width:100%;
+   background: #2A5137;
+   z-index: 9999;
+   position: fixed;
+   bottom:0;
+   border-radius: 30px;
+}
+footer ul{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+footer ul li{
+   padding-bottom: 10px;
+   width:25%;
+}
+
+footer ul li:nth-of-type(2) {
+   background:#323232;
+   border-radius: 30px;
+}
+
+footer ul li img{
+   height: 30px;
+   margin-top: 10px;
+   margin-left: 35%;
+}
+/* fotter end */

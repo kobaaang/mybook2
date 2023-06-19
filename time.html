@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>시계</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+   <link rel="stylesheet" href="style/reset.css">
+   <link rel="stylesheet" href="style/time.css">
+   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+   <script defer src="./js/time.js"></script>
+   <script defer src="./js/time2.js"></script>
+
+</head>
+
+<body>
+   <!-- 헤더 -->
+   <div class="prev">
+      <a href="#" class="leave"><img src="./img/back4.png" alt=""></a>
+      </div>
+   <h1 class="header"></h1>
+   <!-- 시계 -->
+   <div class="content_wrap">
+      <div class="section1_warp">
+         <a href="#" class="button1">
+            <div class="section1_1 under">
+               <h1>독서시간</h1>
+            </div>
+         </a>
+         <a href="#">
+            <div class="section1_2">
+               <h1>기억하고 싶은 것</h1>
+            </div>
+         </a>
+      </div>
+      <div class="end_section">
+         <img src="./img/end.gif" alt="">
+         <ul>
+            <li class="leave2"><a href="./time.html">더 읽기</a></li>
+            <li class="out"><a href="./main.html">그만!</a></li>
+         </ul>
+         
+      </div>
+
+      <div class="section_2 active">
+         <div class="clock_wrap">
+            <h1 id="clock"></h1>
+         </div>
+         <div class="containerMrs">
+            <p class="output"><b>00:00:00</b></p>
+            <div id="controls">
+               <button id="startPause" onclick="startPause()"><b id="start">start</b></button>
+               <button onclick="reset()" id="reset">
+                  <b>reset</b></button>
+            </div>
+         </div>
+         <div class="button">
+            <h1 id=stopTime></h1>
+            <h1 id="breaktime"></h1>
+         </div>
+      </div>
+      <!-- section_2 end -->
+      <!-- 기억하고 싶은 것 -->
+      <div class="section_3">
+         <div class="memo_title">
+         </div>
+         <div class="memo_wrap">
+            <div class="memory">
+               <h1>나의 기억</h1>
+            </div>
+            <button class="memo_btn">
+               기억추가
+            </button>
+         </div>
+
+         <div class="memo_box_wrap">
+            <input type="text" class="memo_box" placeholder="끄적인 기억들은 여기에 남아있을 거에요">
+         </div>
+         <ul class="items">
+
+         </ul>
+      </div>
+   </div>
+</body>
+
+</html>

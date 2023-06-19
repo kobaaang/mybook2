@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@font-face {
+   font-family: 'Pretendard-Regular';
+   src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+   font-weight: 400;
+   font-style: normal;
+}
+/* ( 크롬, 사파리, 오페라, 엣지 ) 동작 */
+body::-webkit-scrollbar {
+   display: none;
+}
+
+body{
+   position: relative;
+   font-family: 'Pretendard-Regular';
+   max-width:500px;
+   width:100%;
+   margin:0 auto;
+   background: #eeeeee;
+   height: 100vh;
+}
+header{
+   max-width:100%;
+   background:#2A5137;
+}
+header h2{
+   font-size: 20px;
+   padding-top: 15px;
+   padding-bottom:15px;
+   padding-left: 30px;
+   letter-spacing: -2px;
+   font-weight: bold;
+   color:white;
+}
+
+/* section2  */
+   .section2{
+      max-width:100%;
+      margin-top: 50px;
+   }
+   .section2 ul{
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      margin: 0 auto;
+   }
+   .tab_button{
+      padding-bottom: 5px;
+   }
+   .tab_button a{
+      font-size: 17px;
+      font-weight: bold;
+   }
+/* section2 end */
+
+
+
+.content_wrap{
+   max-width:100%;
+   
+}
+.section2{
+   margin:0 auto;
+   margin-top:30px;
+}
+.section2 ul li a{
+   color:black;
+}
+.section2 .on a{
+   color:grey;
+}
+.on{
+   border-bottom: 2px solid #ccc;;
+}
+
+.section3{
+   max-width: 100%;
+   position: relative;
+}
+.section3_1{
+   width: 90%;
+   visibility: hidden;
+   margin:0 auto;
+   padding-top:0.3px
+}
+
+
+.section3_2{
+   position: absolute;
+   width: 90%;
+   left:5%;
+   top:0;
+   visibility: hidden;
+}
+
+.section3_3{
+   position: absolute;
+   width:90%;
+   left:5%;
+   top:0;
+   visibility: hidden;
+}
+.section3_4{
+   position: absolute;
+   width:90%;
+   left:5%;
+   top:0;
+   visibility: hidden;
+}
+
+.content{
+   display: flex;
+   align-items: center;
+   border: 1px solid #ccc;
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+.thumbnail{
+   border-radius: 10px 0 0 10px;
+   height:110px ;
+}
+.content h1{
+   margin: 15px 30px 10px 30px ;
+   font-size: 15px;
+   font-weight: bold;
+}
+.content p{
+   text-align: right;
+   margin-left: 30px;
+   font-size: 13px;
+   line-height: 20px;
+}
+.content .inner{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.active{
+   visibility: visible;
+}
+
+.content{
+   margin-top:20px;
+   background:#dfdbdbee
+
+}
+
+.modal-overlay{
+   max-width: 100%;
+}
+.modal-content{
+   width:80%;
+   padding: 10px 0;
+   text-align: center;
+   background:#eee;
+   border:2px solid #2A5137;
+   position: fixed;
+   top:10%;
+   left:10%;
+   border-radius: 30px;
+}
+.modal-content h1{
+   margin-bottom: 50px;
+   font-size: 20px;
+   color:#333;
+}
+.button-wrapper {
+   width:55%;
+   margin:0 auto;
+   display: flex;
+   justify-content: space-between;
+}
+.delete-button{
+   /* width:100px; */
+   width: 100px;
+   font-size: 16px;
+   font-weight: 600;
+   color: black;
+   cursor: pointer;
+   margin: 20px;
+   height: 55px;
+   text-align:center;
+   border: 1px solid #2A5137;;
+   border-radius: 50px;
+   background:#2A5137;
+   color:white;
+}
+.close-button{
+   width: 100px;
+   font-size: 16px;
+   font-weight: 600;
+   color: black;
+   cursor: pointer;
+   margin: 20px;
+   height: 55px;
+   text-align:center;
+   border: 1px solid #2A5137;
+   border-radius: 50px;
+   background:white;
+}
+.modal-overlay .inner{
+   color:white;
+   margin-top: 15px;
+}
+.modal-overlay .inner p{
+   line-height: 25px;
+   color:black;
+}
+
+/* footer */
+footer {
+   position: fixed;
+   left: 50%;
+   transform: translateX(-50%);
+   bottom: 20px;
+   width: 90%;
+   max-width: 500px;
+   background: #2A5137;
+   border-radius: 30px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+footer ul {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+}
+
+footer ul li {
+   width: 25%;
+   padding-bottom: 10px;
+}
+
+footer ul li:nth-of-type(3) {
+   background: #323232;
+   border-radius: 30px;
+}
+
+footer ul li img {
+   height: 30px;
+   margin-top: 10px;
+   margin-left: 35%;
+}
+
+
+
+/* fotter end */
+
+
+
